@@ -5,7 +5,6 @@
 
     <h1 class="pb-5 text-dark">Documentation</h1>
 
-
     <h2>RNApedia: A Database of Protein-RNA Interactions</h2>
     <p>RNApedia collects data from the Protein Data Bank (PDB) and organizes structures into interaction pairs composed of a protein chain and an RNA chain. For each complex, RNApedia provides detailed information:</p>
 
@@ -24,7 +23,7 @@
                 <li>"." represents unpaired bases.</li>
             </ul>
         </li>
-        <li><strong>Free Energy (kcal/mol):</strong> Stability measure calculated by RNAfold (negative values indicate more stability).</li>
+        <li><strong>Free Energy (kcal/mol):</strong> Stability measure calculated by RNAfold <sup>[1]</sup> (negative values indicate more stability).</li>
     </ul>
 
     <h3>Protein Properties</h3>
@@ -45,7 +44,7 @@
 
     <h3>Accessible Surface Area (ASA) Calculations</h3>
     <ul>
-        <li><strong>All-atoms ASA Protein/RNA/Complex:</strong> Measures exposure of molecules to solvent.</li>
+        <li><strong>All-atoms ASA Protein/RNA/Complex:</strong> Measures exposure of molecules to solvent using NACCESS <sup>[2]</sup>.</li>
         <li><strong>ΔASA All-atoms:</strong> Difference between total ASA before and after complex formation.</li>
         <li><strong>BSA All-atoms:</strong> Buried surface area, related to interaction stability.</li>
         <li><strong>Non-polar ASA:</strong> Evaluates hydrophobic interaction contributions.</li>
@@ -60,10 +59,19 @@
 
     <h3>What is RpID?</h3>
 
-    <p>RpID is the RNApedia entry ID. Each complex has an unique identification code composed of eight characteres (1ABC-X-X, <em>i.e.</em>, PDB_ID-RNA_CHAIN-PROTEIN_CHAIN). </p>
+    <p>RpID is the RNApedia entry ID. Each complex has a unique identification code composed of eight characters (1ABC-X-X, <em>i.e.</em>, PDB_ID-RNA_CHAIN-PROTEIN_CHAIN). </p>
 
     <h4 class=""><strong>How to cite:</strong></h4>
-    <p class="small" id="browse">BASTOS, Luana Luiza et al. A strategy for refining the calculation of contacts in protein-RNA complexes. In: Simpósio Brasileiro de Bioinformática (BSB). SBC, 2024. p. 241-246.</p>
+    <p class="small" id="browse">
+        BASTOS, Luana Luiza et al. A strategy for refining the calculation of contacts in protein-RNA complexes. In: Simpósio Brasileiro de Bioinformática (BSB). SBC, 2024. p. 241-246.
+    </p>
+
+    <h4 class=""><strong>References:</strong></h4>
+    <ol class="small">
+        <li>Gruber, A. R., Lorenz, R., Bernhart, S. H., Neuböck, R., & Hofacker, I. L. (2008). The Vienna RNA Websuite. <em>Nucleic Acids Research</em>, 36(suppl_2), W70-W74. <a href="https://doi.org/10.1093/nar/gkn188" target="_blank">https://doi.org/10.1093/nar/gkn188</a>.</li>
+        <li>Hubbard, S. J. (1993). NACCESS. <em>Department of Biochemistry and Molecular Biology, UCL</em>.</li>
+        <li>RNAcentral: a comprehensive database of non-coding RNA sequences. (2017). <em>Nucleic Acids Research</em>, 45(D1), D128-D134. <a href="https://doi.org/10.1093/nar/gkw1008" target="_blank">https://doi.org/10.1093/nar/gkw1008</a>.</li>
+    </ol>
 
     <!-- / FIM Conteúdo personalizado -->
 </div>
